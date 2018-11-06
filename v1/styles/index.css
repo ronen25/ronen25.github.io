@@ -1,0 +1,81 @@
+.jumbotron{
+	color: white;
+	background-image: url("https://i.imgur.com/bhkFCia.jpg");
+	background-size: cover;
+	height: 70vh;
+	text-align: center;
+	padding-top: 1%;
+}
+dd{
+	margin-left: 30px;
+}
+#skillsColLeft{
+	border-right: 1px solid black;
+	border-collapse: collapse;
+}
+#skillsColRight{
+	border-left: 1px solid black;
+	border-collapse: collapse;
+}
+
+#projects{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.project-title{
+	text-align: right;
+}
+.project-text{
+	text-align: right;
+}
+.badge-dark{
+	padding: 5px 10px;
+	margin: 0px 3px;
+	font-size: 15px;
+	font-family: ubuntu mono;
+}
+.even{
+	float: right;
+}
+.dropdown{
+	text-align: center;
+	margin-bottom: 20px;
+}
+i{
+	margin: 5px 10px;
+}
+.container{
+	max-width: 75%;
+}
+body{
+	font-family: ubuntu;
+}
+#name{
+	font-family: ubuntu;
+	font-size: 100px;
+}
+#text{
+	font-family: fira sans;
+	font-size: 50px;
+	margin-top:50px;
+}
+.navbar{
+	background-color: transparent;
+	width: 100%;
+	margin-top: 0;
+}
+.container-fluid{
+	margin-top: 10%;
+}
+.nav-item{
+	color: white;
+}
+ul li a{
+	color: white;
+}
+.card{
+	border: none;
+}
+.list-group-item{
+	border: none;
+}

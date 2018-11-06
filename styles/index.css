@@ -1,81 +1,169 @@
-.jumbotron{
-	color: white;
-	background-image: url("https://i.imgur.com/bhkFCia.jpg");
-	background-size: cover;
-	height: 70vh;
-	text-align: center;
-	padding-top: 1%;
-}
-dd{
-	margin-left: 30px;
-}
-#skillsColLeft{
-	border-right: 1px solid black;
-	border-collapse: collapse;
-}
-#skillsColRight{
-	border-left: 1px solid black;
-	border-collapse: collapse;
+body, html{
+	margin: 0;
+	height: 100%;
+	font-family: "Ubuntu";
 }
 
-#projects{
-	margin-top: 20px;
-	margin-bottom: 20px;
+
+/*navbar*/
+#navbar ul{
+	/*background-color: lightgray;*/
+	background-color: transparent; 
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: hidden;
+	
 }
-.project-title{
-	text-align: right;
+
+#navbar li{
+	float: left;
 }
-.project-text{
-	text-align: right;
+
+#navbar a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+	padding: 1em;
 }
-.badge-dark{
-	padding: 5px 10px;
-	margin: 0px 3px;
-	font-size: 15px;
-	font-family: ubuntu mono;
+
+#navbar a:hover{
+	background-color: black;
+	color: white;
 }
-.even{
+
+#navbar .right{
 	float: right;
 }
-.dropdown{
+
+/*hero image*/
+#hero-image{
+	background-image: url(https://i.imgur.com/bhkFCia.jpg);
+	height: 70%;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	top: -4em;
+	z-index: -1;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#hero-text{
 	text-align: center;
-	margin-bottom: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  	color: white;
+  	font-size: 2em;
+  	font-family: "Ubuntu";
+  	text-shadow: 2px 2px 4px #000000;
 }
-i{
-	margin: 5px 10px;
-}
+
+/*main*/
 .container{
-	max-width: 75%;
+	width: 70%;
+	margin: auto;
 }
-body{
-	font-family: ubuntu;
+
+.row{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#name{
-	font-family: ubuntu;
-	font-size: 100px;
+
+.row:first-of-type{
+	margin-bottom: 4em;
 }
-#text{
-	font-family: fira sans;
-	font-size: 50px;
-	margin-top:50px;
+
+.row-head{
+	text-align: center;
+	background-color: dodgerblue;
+	padding: 0.25em;
+	font-size: 2em;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
 }
-.navbar{
-	background-color: transparent;
+
+.col{
+	float: left;
+    width: 50%;
+    height: 15em;
+    background-color: rgb(250, 250, 250);
+    padding-left: 3em;
+    padding-top: 3em;
+    box-sizing: border-box;
+}
+
+.img-col{
+	padding: 0;
+	width: 33.33%;
+}
+
+.img-col img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.cont-col{
+	width: 66.66%;
+	padding-left: 2em;
+	padding-top: 1em;
+	text-align: center;
+}
+
+.cont-col ul{
+	padding: 0;
+}
+.cont-col ul li{
+	display: inline;
+	list-style-type: none;
+	margin: 1em;
+	padding: 0.25em 0.5em;
+	font-family: "Ubuntu Mono";
+	background-color: dodgerblue;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*.cont-col ul li:first-of-type{
+	margin-left: 0;
+}*/
+
+/*.col:nth-of-type(3n+2){
+	float: right;
+}*/
+
+dt{
+	font-weight: 800;
+}
+
+
+.row:after{
+	content: "";
+    display: table;
+    clear: both;
+}
+
+.footer{
 	width: 100%;
-	margin-top: 0;
+	background-color: dodgerblue;
+	margin-top: 4em;
+	box-sizing: border-box;
 }
-.container-fluid{
-	margin-top: 10%;
+
+.icons{
+	margin: auto;
+	width: 50%;
+	box-sizing: border-box;
+
 }
-.nav-item{
+
+.icons i{
+	padding: 1em;
 	color: white;
-}
-ul li a{
-	color: white;
-}
-.card{
-	border: none;
-}
-.list-group-item{
-	border: none;
+	text-shadow: 2px 2px 4px #000000;
+	width: 19%;
+	box-sizing: border-box;
 }
