@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en" itemscope itemtype="http://schema.org/Person">
+<head>
+        <meta charset="utf-8">
+        <!-- Site Meta Data -->
+        <title>Projects (Portfolio)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Ronen Lapushner">
+
+        <link rel="shortcut icon" href="">
+
+        <!-- schema.org -->
+        <meta itemprop="name" content="Ronen Lapushner">
+        <meta itemprop="image" content="">
+        <meta itemprop="description" content="">
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        <!-- Style Meta Data -->
+        <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="/theme/css/pygments.css" type="text/css"/>
+
+        <!-- Feed Meta Data -->
+            <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+                  title="Ronen Lapushner ATOM Feed"/>
+
+        <!-- Twitter Feed -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:image" content="">
+</head>
+
+<body>
+<!-- Sidebar -->
+<aside>
+    <!--<center><a href=""><img id="avatar" src=""></a></center>-->
+    <h1>Ronen Lapushner</h1>
+    <br>
+
+
+    <nav class="nav">
+        <ul class="list-bare">
+
+
+                <li><a class="nav__link" href="/pages/about-me.html">About Me</a></li>
+                <li><a class="nav__link" href="/pages/contact-me.html">Contact Me</a></li>
+                <li><a class="nav__link" href="/pages/projects.html">Projects (Portfolio)</a></li>
+
+        </ul>
+    </nav>
+
+    <p class="social">
+                <a href="https://www.linkedin.com/in/ronen-lapushner-521966143/" target="_blank"><img
+                        src="/theme/images/icons/linkedin.png"></a>
+                <a href="https://github.com/ronen25/" target="_blank"><img
+                        src="/theme/images/icons/github.png"></a>
+                <a href="https://www.facebook.com/ronen.lapushner" target="_blank"><img
+                        src="/theme/images/icons/facebook.png"></a>
+            <a href="/feeds/all.atom.xml" rel="alternate">
+                <img src="/theme/images/icons/rss.png"></a>
+    </p>
+
+
+
+</aside>
+
+<!-- Content -->
+<article>
+    <section id="content" class="body">
+
+        <h1>Portfolio (Projects)</h1>
+<h2>Panorama</h2>
+<p><img alt="Panorama" src="/screenshots/screenshot_panorama.png"></p>
+<h3>What?</h3>
+<p>Panorama is a lightweight system monitor for Linux, with code separation to include cross-platform support
+in the future (with a Windows port currently being in development).</p>
+<h3>Why?</h3>
+<p>I wanted to create a cross-platform system monitor with uniform look and feel across all the
+platforms I use on a day-to-day basis.</p>
+<h3>Features</h3>
+<ul>
+<li>
+<p>Written in C++14</p>
+</li>
+<li>
+<p>Uses the ImGui immediate mode GUI framework</p>
+</li>
+<li>
+<p>Exteremly lightweight</p>
+</li>
+<li>
+<p>700+ downloads on the Snap store</p>
+</li>
+</ul>
+<h3>Technologies</h3>
+<p>C++, C++14, GUI, Multithreading, ImGUI, Immediate Mode, Cross-Platform</p>
+<h3>Download / Clone</h3>
+<p><a href="https://snapcraft.io/panorama"><img alt="Get it from the Snap Store" src="https://snapcraft.io/static/images/badges/en/snap-store-black.svg"></a></p>
+<hr>
+<h2>libcmdf</h2>
+<p><img alt="libcmdf" src="/screenshots/screenshot_libcmdf.png"></p>
+<h3>What?</h3>
+<p>libcmdf is a C library for writing command line interfaces. It is heavily inspired by the Python <code>cmd</code> module.</p>
+<h3>Why?</h3>
+<p>As part of my job, I had to write some little debugging utilites.</p>
+<p>These utilities needed to be written in C/C++, so I unfortunately did not have the neat <code>cmd</code> module
+in Python, so I decided to write one in C :-)</p>
+<h3>Features</h3>
+<ol>
+<li>
+<p>100% ANSI C</p>
+</li>
+<li>
+<p>Single header - No need to pass complicated commands to link it, just drop it into the project folder!</p>
+</li>
+<li>
+<p>Easy to use</p>
+</li>
+</ol>
+<h3>Technlogoies</h3>
+<p>C, C89, ANSI C, Library, Header, Single Header</p>
+<hr>
+<h2>rpiweatherd / rpiweatherd-qtclient</h2>
+<p><img alt="rpiweatherd and its frontend, rpiweatherd-qtclient" src="/screenshots/screenshot_rpiweatherd.png"></p>
+<h3>What?</h3>
+<p><sup>(Read: R - Pi - Weather - D)</sup></p>
+<p>This project basically has two separate components:</p>
+<p><strong>rpiweatherd</strong> - A daemon that is installed on the Raspberry Pi, and monitors temperature and humidity data with
+a connected sensor, storing this data in an internal on-disk database.</p>
+<p>The daemon exposes the data with a RESTful API via a built-in HTTP server, returning portions of the data
+as JSON.</p>
+<p><strong>rpiweatherd-qtclient</strong> - A very simple demo frontend that connects to an rpiweatherd server and displays the
+current temperature and humidity.</p>
+<p>It also calculates HUMIDEX and real feeling on-the-fly.</p>
+<p>The background is a nice gradient that changes throughout the day :-)</p>
+<h3>Technologies</h3>
+<p><em>For rpiweatherd</em>: C99, pthreads, HTTP, JSON, INI Parsing, SQLite</p>
+<p><em>For rpiweatherd-qtclient</em>: C++11, Qt5, HTTP</p>
+    </section>
+</article>
+
+<!-- Footer -->
+    <footer>
+        <p>
+            Blog powered by <a href="http://getpelican.com/">Pelican</a>,
+            which takes great advantage of <a href="http://python.org">Python</a>.
+            Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a
+                href="https://parbhatpuri.com/">@parbhat</a>.
+        </p>
+    </footer>
+
+
+</body>
+</html>
