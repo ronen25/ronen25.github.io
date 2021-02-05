@@ -4,6 +4,9 @@ title = "Ronen Lapushner"
 
 theme = "hugo-theme-console"
 
+[server.headers.values]
+Accept = "application/vnd.github.mercy-preview+json"
+
 [params]
   # Cutting off the page title to two chars for mobile (console-demo -> co)
   titleCutting = false

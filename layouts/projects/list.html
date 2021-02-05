@@ -1,0 +1,31 @@
+{{ define "main" }}
+<h1>{{ .Page.Title }}</h1>
+{{ .Content }}
+
+<!-- Get data from Github API -->
+<div>
+    {{ $urlPre := "https://api.github.com" }}
+    {{ $repos := getJSON $urlPre "/users/ronen25/repos" }}
+
+    {{ range first 6 (sort $repos "stargazers_count" "desc") }}
+        <!-- Card -->
+        <div class="terminal-card" style="margin-bottom: 10px; padding-left: 10px; padding-bottom: 10px;">
+            <h1>
+                <a target="_blank" href={{ .html_url }}>{{ .name }}</a>
+            </h1>
+            <p>
+                Technologies: 
+                <span style="font-size: large; font-weight: bold;">
+                    {{ range $lang, $percent_code := getJSON .languages_url }}
+                        {{ $lang }},
+                    {{ end }}
+                </span> |
+                Stars: <span style="font-size: large; font-weight: bold;">{{ .stargazers_count }}</span>
+            </p>
+
+            <span>>> {{ .description }}</span>
+        </div>
+    {{ end }}
+</div>
+
+{{ end }}
