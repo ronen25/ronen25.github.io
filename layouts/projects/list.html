@@ -19,7 +19,8 @@
                     {{ range $lang, $percent_code := getJSON .languages_url }}
                         {{ $lang }},
                     {{ end }}
-                </span> |
+                </span>
+                <span style="font-size: x-large;">|</span>
                 Stars: <span style="font-size: large; font-weight: bold;">{{ .stargazers_count }}</span>
             </p>
 
